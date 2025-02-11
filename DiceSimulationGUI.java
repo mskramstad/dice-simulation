@@ -30,10 +30,10 @@ public class DiceSimulationGUI extends JPanel
         r1 = getRandomNumber();
         
         // call showDie method sending Graphics object, the die filename "die" + r1 + ".jpg", the value (1-6), x, y
-        showDie(g, "dice/die" + r1 + ".jpg", startX, startY);
+        showDie(g, "dice/die" + r1 + ".jpg", 30, 100);
         //increment the startY value by 75 (moves down 75 if it's not equal)
        
-        g.drawString("You rolled a : " + (r1+1));
+        g.drawString("You rolled a : " + (r1+1), 30, 400);
         
     }
 
